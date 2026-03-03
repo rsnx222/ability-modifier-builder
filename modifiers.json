@@ -1,0 +1,18 @@
+{
+  "anticipate": ["clear-headed", "reflexes"],
+  "backhand": ["flanking"],
+  "barricade": ["turtling"],
+  "binding-shot": ["flanking"],
+  "chain": ["caroming"],
+  "greater-chain": ["caroming"],
+  "combust": ["lunging"],
+  "death-skulls": ["igneous"],
+  "deadshot": ["igneous"],
+  "impact": ["flanking"],
+  "omnipower": ["igneous"],
+  "overpower": ["igneous"],
+  "ricochet": ["caroming"],
+  "greater-ricochet": ["caroming"],
+  "soul-strike": ["flanking"],
+  "tsunami": ["incite"]
+}
