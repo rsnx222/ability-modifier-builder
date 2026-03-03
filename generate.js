@@ -7,10 +7,10 @@ const ICONS_DIR = "./icons"; // Folder containing modifier icons
 const OUTPUT_DIR = "./output"; // Folder where generated images are saved
 const MODIFIERS_FILE = "./modifiers.json"; // JSON mapping abilities to modifiers
 
-const CANVAS_SIZE = 36; // Final image size (square)
-const ABILITY_SIZE = 26; // Size of main ability icon inside canvas
+const CANVAS_SIZE = 48; // Final image size (square)
+const ABILITY_SIZE = 36; // Size of main ability icon inside canvas
 
-const OVERLAY_SIZE = 22; // Maximum width of modifier icon
+const OVERLAY_SIZE = 28; // Maximum width of modifier icon
 const OVERLAY_PADDING = 2; // Distance of modifier from top-left corner
 
 const OUTLINE_PROFILES = {
