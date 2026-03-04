@@ -8,7 +8,7 @@ const OUTPUT_DIR = "./output"; // Folder where generated images are saved
 const MODIFIERS_FILE = "./modifiers.json"; // JSON mapping abilities to modifiers
 
 const CANVAS_SIZE = 48; // Final image size (square)
-const ABILITY_SIZE = 36; // Size of main ability icon inside canvas
+const ABILITY_SIZE = 40; // Size of main ability icon inside canvas
 
 const OVERLAY_SIZE = 28; // Maximum width of modifier icon
 const OVERLAY_PADDING = 2; // Distance of modifier from top-left corner
@@ -22,11 +22,11 @@ const OUTLINE_PROFILES = {
   white: {
     colour: { r: 255, g: 255, b: 255 }, // Outline colour
     thickness: 1, // Outline thickness radius
-    blur: 1, // Outline blur strength
+    blur: 2, // Outline blur strength
   },
 };
 
-const WHITE_OUTLINE_MODIFIERS = new Set(["igneous"]); // Modifiers that use white outline
+const WHITE_OUTLINE_MODIFIERS = ["igneous"]; // Modifiers that use white outline
 
 if (!fs.existsSync(OUTPUT_DIR)) {
   fs.mkdirSync(OUTPUT_DIR);
@@ -57,7 +57,7 @@ async function generate() {
         continue;
       }
 
-      const profile = WHITE_OUTLINE_MODIFIERS.has(modifier)
+      const profile = WHITE_OUTLINE_MODIFIERS.some(m => modifier.includes(m))
         ? OUTLINE_PROFILES.white
         : OUTLINE_PROFILES.black;
 
